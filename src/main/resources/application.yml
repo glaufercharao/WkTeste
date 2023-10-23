@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: wksystem
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/wk_db
+    username: root
+    password: toor
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.sql: debug
+
